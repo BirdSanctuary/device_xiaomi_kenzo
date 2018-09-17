@@ -38,9 +38,5 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # Sepolicy
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
-# Shims
-TARGET_LD_SHIM_LIBS += \
-	/system/vendor/lib64/lib-imsvt.so|libshims_ims.so
-
 # inherit from the proprietary version
 -include vendor/xiaomi/kenzo/BoardConfigVendor.mk
